@@ -1,0 +1,39 @@
+.container {
+    @apply transition-all duration-200;
+}
+
+.selected {
+    @apply ring-2 ring-blue-500 border-blue-500;
+}
+
+.header {
+    @apply flex items-center justify-between mb-3;
+}
+
+.postId {
+    @apply text-sm font-semibold text-blue-600;
+}
+
+.userId {
+    @apply text-xs text-gray-400;
+}
+
+.title {
+    @apply text-base font-semibold text-gray-800 mb-2 line-clamp-2;
+}
+
+.body {
+    @apply text-sm text-gray-600 line-clamp-3;
+}
+
+.footer {
+    @apply mt-4 pt-3 border-t border-gray-100;
+}
+
+.viewComments {
+    @apply inline-flex items-center gap-1 text-sm text-blue-600 font-medium;
+}
+
+.arrowIcon {
+    @apply w-4 h-4;
+}

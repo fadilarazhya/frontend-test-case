@@ -1,0 +1,23 @@
+.container {
+    @apply flex flex-col items-center justify-center py-12 px-4 text-center;
+}
+
+.iconWrapper {
+    @apply mb-4;
+}
+
+.icon {
+    @apply w-12 h-12 text-red-500;
+}
+
+.title {
+    @apply text-lg font-semibold text-gray-800 mb-2;
+}
+
+.message {
+    @apply text-gray-500 text-sm max-w-sm mb-2;
+}
+
+.actionWrapper {
+    @apply mt-4;
+}

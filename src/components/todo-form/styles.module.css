@@ -1,0 +1,7 @@
+.container {
+    @apply flex gap-3 w-full;
+}
+
+.inputWrapper {
+    @apply flex-1;
+}

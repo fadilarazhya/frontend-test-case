@@ -1,0 +1,39 @@
+.container {
+    @apply bg-gray-50 rounded-xl p-4;
+}
+
+.header {
+    @apply flex items-center justify-between mb-4 pb-3 border-b border-gray-200;
+}
+
+.title {
+    @apply text-lg font-semibold text-gray-800;
+}
+
+.count {
+    @apply text-sm text-gray-500;
+}
+
+.list {
+    @apply space-y-4;
+}
+
+.commentItem {
+    @apply bg-white rounded-lg p-4 shadow-sm;
+}
+
+.commentHeader {
+    @apply flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-2;
+}
+
+.commentName {
+    @apply text-sm font-semibold text-gray-800;
+}
+
+.commentEmail {
+    @apply text-xs text-blue-600;
+}
+
+.commentBody {
+    @apply text-sm text-gray-600 leading-relaxed;
+}
