@@ -36,3 +36,8 @@ Thumbs.db
 # Vite
 *.local
 .vite
+
+# Environment variables
+.env
+.env.local
+.env.*.local
