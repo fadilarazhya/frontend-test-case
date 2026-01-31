@@ -1,0 +1,35 @@
+.container {
+    @apply min-h-screen bg-gray-50 py-8 px-4;
+}
+
+.content {
+    @apply max-w-2xl mx-auto;
+}
+
+.header {
+    @apply text-center mb-8;
+}
+
+.title {
+    @apply text-3xl font-bold text-gray-800 mb-2;
+}
+
+.subtitle {
+    @apply text-gray-500;
+}
+
+.formSection {
+    @apply mb-6;
+}
+
+.filterSection {
+    @apply mb-6;
+}
+
+.listSection {
+    @apply min-h-[200px];
+}
+
+.todoList {
+    @apply space-y-3;
+}

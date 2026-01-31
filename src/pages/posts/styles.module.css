@@ -1,0 +1,216 @@
+.container {
+  @apply max-w-[800px] mx-auto px-5;
+}
+
+.header {
+  @apply text-center mb-6;
+}
+
+.title {
+  @apply text-[28px] font-bold text-[#1a1a2e] mb-2;
+}
+
+.subtitle {
+  @apply text-sm text-gray-500;
+}
+
+.searchContainer {
+  @apply relative mb-6;
+}
+
+.searchIcon {
+  @apply absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 text-base;
+}
+
+.searchInput {
+  @apply w-full py-3.5 pl-11 pr-10 border border-gray-200 rounded-lg text-[15px] outline-none;
+  @apply transition-all duration-200;
+  @apply focus:border-blue-500 focus:shadow-[0_0_0_3px_rgba(59,130,246,0.1)];
+}
+
+.searchInput::placeholder {
+  @apply text-gray-400;
+}
+
+.clearButton {
+  @apply absolute right-3 top-1/2 -translate-y-1/2 bg-transparent border-0 text-gray-400 text-lg cursor-pointer py-1 px-2 leading-none;
+  @apply hover:text-gray-600;
+}
+
+.resultsHeader {
+  @apply flex justify-between items-center mb-4;
+}
+
+.resultsTitle {
+  @apply text-lg font-semibold text-[#1a1a2e];
+}
+
+.resultsCount {
+  @apply text-sm text-gray-500;
+}
+
+.postsList {
+  @apply flex flex-col gap-3;
+}
+
+.postCard {
+  @apply bg-white border border-gray-200 rounded-lg py-4 px-5 cursor-pointer;
+  @apply transition-all duration-200;
+  @apply hover:border-blue-500 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)];
+}
+
+.postCardHeader {
+  @apply flex justify-between items-start gap-4 mb-2;
+}
+
+.postTitle {
+  @apply text-base font-semibold text-[#1a1a2e] m-0 leading-snug;
+}
+
+.postId {
+  @apply text-xs text-gray-400 bg-gray-100 py-0.5 px-2 rounded whitespace-nowrap;
+}
+
+.postBody {
+  @apply text-sm text-gray-500 leading-relaxed my-0 mb-2;
+}
+
+.postMeta {
+  @apply text-xs text-gray-400;
+}
+
+.highlight {
+  @apply bg-yellow-200 px-0.5 rounded-sm;
+}
+
+.loadingContainer {
+  @apply flex flex-col items-center justify-center py-16 px-5;
+}
+
+.spinner {
+  @apply w-10 h-10 border-[3px] border-gray-200 border-t-blue-500 rounded-full animate-spin;
+}
+
+.loadingText {
+  @apply mt-4 text-sm text-gray-500;
+}
+
+.errorContainer {
+  @apply text-center py-16 px-5;
+}
+
+.errorIcon {
+  @apply text-5xl mb-4;
+}
+
+.errorTitle {
+  @apply text-lg font-semibold text-red-600 mb-2;
+}
+
+.errorMessage {
+  @apply text-sm text-gray-500 mb-4;
+}
+
+.retryButton {
+  @apply py-2.5 px-5 bg-blue-500 text-white border-0 rounded-md text-sm font-medium cursor-pointer;
+  @apply transition-colors duration-200;
+  @apply hover:bg-blue-600;
+}
+
+.emptyContainer {
+  @apply text-center py-16 px-5;
+}
+
+.emptyIcon {
+  @apply text-5xl mb-4;
+}
+
+.emptyTitle {
+  @apply text-lg font-semibold text-[#1a1a2e] mb-2;
+}
+
+.emptyMessage {
+  @apply text-sm text-gray-500;
+}
+
+.modalOverlay {
+  @apply fixed top-0 left-0 right-0 bottom-0 bg-black/50 flex items-center justify-center z-[1000] p-5;
+}
+
+.modal {
+  @apply bg-white rounded-xl w-full max-w-[700px] max-h-[85vh] overflow-y-auto;
+  @apply shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1)];
+}
+
+.modalHeader {
+  @apply flex justify-between items-center py-5 px-6 border-b border-gray-200 sticky top-0 bg-white z-10;
+}
+
+.modalTitle {
+  @apply text-lg font-semibold text-[#1a1a2e];
+}
+
+.modalClose {
+  @apply bg-transparent border-0 text-2xl text-gray-400 cursor-pointer p-1 leading-none;
+  @apply hover:text-gray-600;
+}
+
+.modalContent {
+  @apply p-6;
+}
+
+.detailTitle {
+  @apply text-xl font-bold text-[#1a1a2e] mb-4 leading-snug;
+}
+
+.detailBody {
+  @apply text-[15px] text-gray-600 leading-relaxed whitespace-pre-line;
+}
+
+.commentsSection {
+  @apply mt-6 pt-6 border-t border-gray-200;
+}
+
+.commentsTitle {
+  @apply text-base font-semibold text-[#1a1a2e] mb-4;
+}
+
+.commentsList {
+  @apply flex flex-col gap-4;
+}
+
+.commentCard {
+  @apply p-4 bg-gray-50 rounded-lg border-l-[3px] border-l-blue-500;
+}
+
+.commentHeader {
+  @apply flex justify-between items-start gap-3 mb-2;
+}
+
+.commentName {
+  @apply text-sm font-semibold text-[#1a1a2e] leading-snug;
+}
+
+.commentEmail {
+  @apply text-xs text-blue-500 whitespace-nowrap;
+}
+
+.commentBody {
+  @apply text-sm text-gray-500 leading-relaxed;
+}
+
+.commentsLoading {
+  @apply flex items-center gap-3 py-5;
+}
+
+.commentsSpinner {
+  @apply w-5 h-5 border-2 border-gray-200 border-t-blue-500 rounded-full animate-spin;
+}
+
+.commentsLoadingText {
+  @apply text-sm text-gray-500;
+}
+
+.commentsError {
+  @apply p-4 bg-red-50 rounded-lg text-red-600 text-sm;
+}
